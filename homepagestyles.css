@@ -1,0 +1,62 @@
+.phonediv{
+    position : relative; left: 130px; top: 200px;
+}
+
+.computerdiv{
+    
+    position : relative; left: 450px; top: -159px;
+}
+
+.tvdiv{
+    position: relative; left: 930px; top: -453px
+}
+
+.phonecaption{
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.computercaption{
+    font-size: 30px;
+}
+
+.tvcaption{
+    font-size: 30px;
+}
+
+.iPhone{
+    font-size: large;
+    padding-left: 30px; 
+    padding-right: 30px;
+    padding-top: 20px;
+    border: none; 
+    background: none; 
+    
+}
+
+.Computers{
+    font-size: large;
+    padding-left: 30px; 
+    padding-right: 30px;
+    padding-top: 20px;
+    border: none; 
+    background: none; 
+}
+
+.Tv{
+    font-size: large;
+    padding-left: 30px; 
+    padding-right: 30px;
+    padding-top: 20px;
+    border: none; 
+    background: none; 
+}
+
+.title{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.options{
+    text-align: center;
+}
