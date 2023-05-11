@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Basics</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/app.css"/>
+  <script>
+
+    var input_Num;
+    var second_Num;
+    var result;
+
+
+    function calculate(operator) {
+      document.getElementById("dvHistory").innerHTML += operator;
+    }
+
+    function clickNumbers(id) {
+      document.getElementById("dvHistory").innerHTML += id;
+      document.getElementById("dvResult").innerHTML = eval(document.getElementById("dvHistory").innerHTML)
+    }
+
+    function clear() {
+      document.getElementById("dvHistory").innerHTML = "";
+      document.getElementById("dvResult").innerHTML = "";
+    }
+  </script>
+</head>
+<body>
+  <div class="div-style">
+    <h1 class="header">Calculator</h1>
+    <div id="dvHistory"></div><br><br>
+   <div id="dvResult"></div><br>
+    <br>
+    <br>
+    <br>
+    <div class="operations">
+      <button type="button" id="btn-add" class="button" onclick="calculate('+')">+</button>
+      <button type="button" id="btn-subtract" class="button" onclick="calculate('-')">-</button>
+      <button type="button" id="btn-mutiply" class="button" onclick="calculate('*')">*</button>
+      <button type="button" id="btn-divide" class="button" onclick="calculate('/')">/</button>
+      <button type="button" id="btn-exponent" class="button" onclick="calculate('^')">^</button>
+    </div>
+    <hr>
+    <div class="rationals">
+      <button type="button" id="one" class="buttons" onmouseup="clickNumbers('1')">1</button>
+      <button type="button" id="two" class="buttons" onmouseup="clickNumbers('2')">2</button>
+      <button type="button" id="three" class="buttons" onmouseup="clickNumbers('3')">3</button>
+      <button type="button" id="four" class="buttons" onmouseup="clickNumbers('4')">4</button>
+      <button type="button" id="five" class="buttons" onmouseup="clickNumbers('5')">5</button>
+      <button type="button" id="six" class="buttons" onmouseup="clickNumbers('6')">6</button>
+      <button type="button" id="seven" class="buttons" onmouseup="clickNumbers('7')">7</button>
+      <button type="button" id="eight" class="buttons" onmouseup="clickNumbers('8')">8</button>
+      <button type="button" id="nine" class="buttons" onmouseup="clickNumbers('9')">9</button>
+      <button type="button" id="zero" class="buttons" onmouseup="clickNumbers('0')">0</button>
+      <button type="button" id="clear" class="buttons" onclick="clear()">Clear</button>
+    </div>
+  </div>
+</body>
+
+</html>
